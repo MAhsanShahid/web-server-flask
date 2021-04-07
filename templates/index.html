@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <script type="text/javascript" src="../static/index.js"></script>
+    <title>Flask</title>
+</head>
+<body>
+<div id="wrapper">
+    <div id="inner1">
+
+        <label>
+            Keywords to search:
+            <input id="input1" name="keywords" type="text" placeholder="Type to search... *"/>
+        </label>
+
+    </div>
+
+    <div id="inner2">
+        <label>Enter related domain(correctly):
+            <input id="input2" name="domain" type="text" placeholder="Type or paste correct domain... *"/>
+        </label>
+        <button id="button" onclick="sendrequest()">Submit</button>
+        Kindly fill both fields to submit!
+    </div>
+    <div id="inner3">
+        <label id="labelOutput">Page Rank Result (JSON):</label>
+        <div id="myData"></div>
+    </div>
+    <div id="inner4">
+        <label id="tagsLabelOutput">Anchor Tags Result (JSON):</label>
+        <span id="spanTags" contenteditable="true">
+        </span>
+    </div>
+</div>
+</body>
+</html>
